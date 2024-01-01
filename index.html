@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b64f8ac21b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="#" class="left-link">Strona Domowa <i class="fa-solid fa-house"></i></a>
+        <a href="#wstep">Menu</a>
+        <a href="#map">Lokalizacja</a>
+        <a href="#godziny-otwarcia">Godziny otwarcia</a>
+        <a href="#metody-platnosci">Metody płatności</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#godziny-otwarcia"><button class="res-but">Rezerwacja</button></a>
+    </nav>
+    <header>
+        <h2>PIZZERIA</h2>
+        <a href="#godziny-otwarcia"><button class="res-but">REZERWACJA</button></a>
+    </header>
+
+    <section id="wstep">
+        <h3>Możesz również złożyć zamówienie na wynos</h3>
+        <p>Spędź u nas wieczór z włoską kuchnią i wszystkimi jej walorami. W „Pizzeri u Cypka” oferowane są smaczne potrawy w ciekawej atmosferze. Możesz nadto spróbować u nas śródziemnomorskich potraw.</p>
+        <hr>
+        <h3>Włoska szarmancka restauracja w najlepszej okolicy</h3>
+        <p>Nasza tradycyjna włoska kuchnia oferuje Wam wiele pysznych, świeżo przygotowanych specjałów. U nas czeka na Ciebie bufet sałatkowy. Na przykład spróbuj naszej popularnej pizzy.</p>
+    </section>
+   
+    <section id="menu">
+        <h2>Nasze</h2><h3>menu</h3>
+        <button class="res-but"><i class="fa-solid fa-download"></i> Menu</button>
+    </section>
+    <section id="map">
+        <button class="res-but">Zobacz lokalizację</button>
+    </section>
+    <section id="godziny-otwarcia">
+        <h2>Nasze <p>godziny otwarcia</p></h2>
+        <hr>
+        <table>
+        <tr><td class="dzien_tyg">Poniedziałek</td><td class = "godzina">12:00-21:00</td></tr>
+        <tr><td class="dzien_tyg">Wtorek</td><td class = "godzina">12:00-21:00</td></tr>
+        <tr><td class="dzien_tyg">Środa</td><td class = "godzina">12:00-21:00</td></tr>
+        <tr><td class="dzien_tyg">Czwartek</td><td class = "godzina">12:00-21:00</td></tr>
+        <tr><td class="dzien_tyg">Piątek</td><td class = "godzina">12:00-23:00</td></tr>
+        <tr><td class="dzien_tyg">Sobota</td><td class = "godzina">12:00-23:00</td></tr>
+        <tr><td class="dzien_tyg">Niedziela</td><td class = "godzina">12:00-21:00</td></tr>
+        </table>
+    </section>
+    <section id="metody-platnosci">
+        <h2>Metody <p>płatności</p></h2>
+        <hr>
+        <div class="payment-method">
+        <p><i class="fa-solid fa-money-bill-wave"></i><br>Gotówka</p><p><i class="fa-brands fa-bitcoin"></i><br>Bitcoin</p><p><i class="fa-brands fa-cc-apple-pay"></i><br>ApplePay</p><p><i class="fa-brands fa-cc-visa"></i><br>VISA</p><p><i class="fa-brands fa-cc-paypal"></i><br>PayPal</p>
+        </div>
+    </section>
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="obrazy">
+        <img src="p1.jpg" alt="obrazek_pizzy"><img src="p2.jpg" alt="obrazek_pizzy">
+        </div>
+    </section>
+
+    <section id="kontakt">
+        <div class="contact-header">Wyślij nam wiadomość</div>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Imie i Nazwisko</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Twój E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Twoja wiadomość</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Wyślij wiadomość</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Moja Strona. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>

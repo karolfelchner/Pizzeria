@@ -1,0 +1,342 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    background-image: url("bg.jpg");
+    color: #fff;
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 48px;
+    width: 100%;
+    background-color: #1e1e1e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.95;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    z-index: 100;
+   
+}
+.left-link {
+    margin-right: auto;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+    opacity: 1;
+}
+nav a:hover{
+    color: red;
+}
+
+header {
+    background-image: url("pizza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: table;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header > h2{
+    color:aliceblue;
+    font-size: 72px;
+    text-shadow: 2px 2px 4px black;
+}
+header > a {
+    margin-bottom: 15%;
+}
+.res-but{
+    color:aliceblue;
+    background-color: tomato;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    padding: 12px 24px;
+    border-radius: 2px;
+    border-width: 0;
+    cursor: pointer;
+}
+.res-but:hover{
+    background-color: rgb(222, 85, 60);
+}
+section {
+    padding: 20px;
+}
+
+#wstep{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+#wstep > hr{
+    border: 1px solid red;
+}
+#wstep > h3{
+    font-size: 32px;
+    text-shadow: 2px 2px 4px black;
+}
+#wstep > p{
+    font-weight: 400;
+}
+
+#menu{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 200%;
+    text-shadow: 2px 2px 4px black;
+    text-transform:uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    padding-bottom: 5%;
+}
+#menu > h2{
+    color:red;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#menu >h3{
+    margin-top: 0;
+    color:white;
+}
+
+#map{
+    background-image: url("map.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    display: table;
+    height: 60svh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#godziny-otwarcia{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+#godziny-otwarcia > h2{
+    text-align: center;
+    font-size: 300%;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color:red;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+#godziny-otwarcia > h2 > p{
+    font-size: 75%;
+    margin-top: 0;
+    color:white;
+}
+#godziny-otwarcia > hr{
+    border-color: red;
+    border-width: 1px;
+    width: 75%;
+}
+#godziny-otwarcia > table{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+}
+#godziny-otwarcia > table > tbody > tr > td{
+    padding: 5px 35px;
+    font-size: 150%;
+    text-shadow: 2px 2px 4px black;
+    font-weight: 500;
+}
+#godziny-otwarcia > table > tbody > tr > td.dzien_tyg{
+    color:red;
+}
+
+#metody-platnosci{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+#metody-platnosci > h2{
+    text-align: center;
+    font-size: 300%;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color:red;
+    padding-bottom: 0;
+    padding-top: 0;
+    
+}
+#metody-platnosci > h2 > p{
+    font-size: 75%;
+    margin-top: 0;
+    color:white;
+    
+}
+#metody-platnosci > hr{
+    border-color: red;
+    border-width: 1px;
+    width: 75%;
+}
+.payment-method{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 150%;
+    font-weight: 500;
+}
+.payment-method > p{
+    margin-right: 30px;
+}
+.payment-method > p > i{
+    justify-content: space-evenly;
+    font-size: 250%;
+}
+
+#galeria{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+#galeria > h2{
+    text-align: center;
+    font-size: 300%;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color:red;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#galeria > .obrazy{
+    display:flex;
+    justify-content: center;
+}
+#galeria > .obrazy > img{
+    margin-right: 10px;
+    width: 60svh;
+    height: 60svh;
+    border-color: #ddd;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    
+    
+}
+#galeria > .obrazy > img:hover{
+
+    transform: scale(1.1);
+   
+}
+
+#kontakt {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.contact-header {
+    text-align: center;
+    font-size: 300%;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color:red;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #008080;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.submit-button:hover {
+    background-color: #006666;
+}
+
+
+
+
+footer {
+    height: 48px;
+    width: 100%;
+    background-color: #1e1e1e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.95;
+    padding: 10px;
+    text-align: center;
+}
+
